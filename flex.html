@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css布局——弹性布局</title>
+    <meta name="keywords" content="css布局" />
+    <meta name="description" content="css布局总结" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+  </head>
+  <style>
+  
+  #container{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+ /* 初次flex
+  .flex-container{
+    list-style: none;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
+  .flex-item{
+   padding:5px;
+   flex:1 1 auto;
+   text-align: center;
+  }
+  img{
+    width: 300px;
+    height:300px;
+  }*/
+  .flex-container{    
+    display:flex;    
+  }
+  </style>
+  <body>
+  <div id="container">
+    <!-- 初次flex
+    <ul class="flex-container">
+       <li class="flex-item" ><img src="img/1.jpg"></li>
+       <li class="flex-item" ><img src="img/2.jpg"></li>  
+       <li class="flex-item" ><img src="img/3.jpg"></li> 
+       <li class="flex-item" ><img src="img/4.jpg"></li> 
+       <li class="flex-item" ><img src="img/5.jpg"></li>  
+       <li class="flex-item" ><img src="img/6.jpg"></li> 
+    </ul>   -->  
+    <div class="flex-container">
+      <div class="logo">Logo</div>
+      <div class="profile">Profile</div>
+    </div>
+  </div> 
+  </body>
+</html>
