@@ -9,87 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" type="text/css" href="css/first-method.css"> --><!-- 第一种实现方式 -->
     <!-- <link rel="stylesheet" type="text/css" href="css/second-method.css"> --><!-- flex方式 -->
-    <link rel="stylesheet" type="text/css" href="css/third-method.css"> <!-- 类似圣杯布局方式  --> 
+    <link rel="stylesheet" type="text/css" href="css/third-method.css"> <!-- 类似圣杯布局方式  -->
+    <link rel="stylesheet" type="text/css" href="css/base.css"><!-- 详细布局 --> 
   </head>
-<style>
-*{
-  margin: 0;
-  padding: 0;
-}
-html,body{
-  height:100%;
-  overflow: hidden;
-}
-header{
-  text-align: center;
-  line-height: 40px;
-}
-#container{
-  height: 100%;
-}
-.main-container{
-  height:100%;
-  width: 100%;
-}
-/*实现内容区域可滚动*/
-.main-content-inner{
-  position: relative;
-  height: 100%;
-}
-.main-content-wrap{
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top:0; 
-  overflow: auto; 
-}
-/*实现内容区域可滚动结束*/
-
-/*左侧详细布局*/
-ul li{
-  list-style: none;
-}
-img{
-  width:170px;
-  height: 170px;
-}
-.personal,.interests{
-  padding: 15px;
-}
-.personal li,.interests li{
-  margin-bottom: 5px;
-}
-/*左侧详细布局结束*/
-
-/*右侧侧详细布局*/
-div span{
-  display: inline-block; 
-  margin-right: 5%;
-}
-section {
-  margin-bottom: 20px;
-  margin-left: 5%;
-}
-.educational-wrap,.project-wrap,.skill,.certificate-content,.self-assessment-content{
-  margin: 15px 0;
-  border: 1px #ccc dotted;
-  padding: 10px;
-}
-.educational,.project{
-  height: 1.5em;
-}
-dl dt{
-  padding-top: 5px;
-}
-dl dd{
-  text-indent: 2em;
-}
-ol li{
-  list-style-position: inside;
-}
-/*右侧侧详细布局结束*/
-</style>
 <body>
   <div id="container">
     <div class="main-container">
