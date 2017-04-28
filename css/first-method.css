@@ -1,0 +1,25 @@
+/*第一种方式实现左列定宽右列自适应*/
+  /*注意此处要清除浮动，否则右边内容显示会异常*/
+.main-container :after{
+  display: block;
+  visibility: hidden;
+  content: ".";
+  clear: both;
+  height: 0;
+}
+
+.sidebar{
+  width: 170px;
+  float:left;
+  padding: 15px 15px;
+  color:#fff;
+  background-color: #333;
+  padding-bottom: 9999px; 
+  margin-bottom: -9999px; /*利用负边距实现两列等高*/
+}
+.main-content{
+  margin-left: 200px;
+  padding: 5px 0 0 10px;
+  height: 100%;
+}
+/*第一种方式实现左列定宽右列自适应结束*/

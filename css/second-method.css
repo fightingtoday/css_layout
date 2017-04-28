@@ -1,0 +1,19 @@
+/*第二种方式(flex布局)实现左列定宽右列自适应*/
+.main-container{
+  display:flex;
+}
+.sidebar{
+  width: 170px;
+  flex:0 0 auto;
+  padding: 15px 15px;
+  color:#fff;
+  background-color: #333;
+  padding-bottom: 9999px; /*利用负边距实现两列等高*/
+  margin-bottom: -9999px;
+}
+.main-content{
+  flex:1;
+  padding: 5px 0 0 10px;
+  height: 100%;
+}
+/*第二种方式实现左列定宽右列自适应结束*/
