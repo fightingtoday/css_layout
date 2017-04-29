@@ -51,7 +51,7 @@ ul{
 /*右侧侧详细布局*/
 div span{
   display: inline-block; 
-  margin-right: 5%;
+  margin-right: 3%;
 }
 section {
   margin-bottom: 20px;
@@ -61,9 +61,6 @@ section {
   margin: 15px 0;
   border: 1px #ccc dotted;
   padding: 10px;
-}
-.educational,.project{
-  height: 1.5em;
 }
 dl dt{
   padding-top: 5px;
