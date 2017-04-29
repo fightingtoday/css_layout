@@ -38,9 +38,6 @@ ol li{
     height:100%;
     overflow: hidden;
   }
-  #container{
-    height: 100%;
-  }
   .main-container{
     height:100%;
     width: 100%;
@@ -64,7 +61,7 @@ ol li{
     display:flex;
   }
   /*利用负边距实现两列等高*/
-  .sidebar{
+  aside{
     width: 170px;
     float:left;
     margin-right: -200px;
@@ -100,7 +97,7 @@ ol li{
 }
 /*当屏幕宽度在360px-770px时的布局*/
 @media screen and (max-width:770px){
-  .sidebar{
+  aside{
     display: flex;
     flex-wrap:wrap;
     width: 90%;
@@ -113,7 +110,7 @@ ol li{
     padding: 5px 2% 0 3%;
   }
 
-  .sidebar section{
+  aside section{
     flex:1;
     display: flex;
     flex-direction:column;
@@ -137,7 +134,7 @@ ol li{
 }
 /*当屏幕宽度小于360px时的布局*/
 @media screen and (max-width:360px){
-  .sidebar{
+  aside{
     display: flex;
     flex-direction:column;
     flex-wrap:wrap;

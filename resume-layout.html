@@ -13,10 +13,9 @@
    <link rel="stylesheet" type="text/css" href="css/base.css"><!-- 详细布局 --> 
     <!-- <link rel="stylesheet" type="text/css" href="css/resume-response.css"> -->
   </head>
-<body>
-  <div id="container">
+  <body>
     <div class="main-container">
-      <div class="sidebar">
+      <aside>
         <img src='img/wangcui.png' alt="我的照片"/>
         <section class="personal">
           <p>基本信息</p>
@@ -33,119 +32,118 @@
             <li>阅读</li>
           </ul>
         </section>
-      </div>
+      </aside>
       <div class="main-content">
         <div class="main-content-inner">
           <div class="main-content-wrap">
-            <section class="educational-background">
-            <h3>教育背景</h3>
-            <div class="educational-wrap">
-              <div class="educational">
-                <span class="time">2012.09-2016.07</span>
-                <span class="school">长江大学</span>
-                <span class="major">通信工程</span>
-                <span class="education">本科</span>
+            <section>
+              <h3>教育背景</h3>
+              <div class="educational-wrap">
+                <div class="educational">
+                  <span >2012.09-2016.07</span>
+                  <span >长江大学</span>
+                  <span >通信工程</span>
+                  <span >本科</span>
+                </div>
+                <dl class="course">
+                  <dt>主修课程</dt>
+                    <dd>C语言，计算机基础，计算机网络，通信原理，数字电路，模拟电路，英语，高数</dd>
+                </dl>
               </div>
-              <dl class="course">
-                <dt>主修课程</dt>
-                  <dd>C语言，计算机基础，计算机网络，通信原理，数字电路，模拟电路，英语，高数</dd>
-              </dl>
-            </div>
-            <div class="educational-wrap">
-              <div class="educational">
-                <span class="time">2016.09-2018.07</span>
-                <span class="school">武汉大学</span>
-                <span class="major">软件工程 </span>
-                <span class="education">硕士</span>
+              <div class="educational-wrap">
+                <div class="educational">
+                  <span >2016.09-2018.07</span>
+                  <span >武汉大学</span>
+                  <span >软件工程 </span>
+                  <span >硕士</span>
+                </div>
+                <dl class="course">
+                  <dt>主修课程</dt>
+                    <dd>java高级，高级数据库，项目管理，现代软件架构，软件过程管理，专业英语，数学建模</dd>
+                </dl>
               </div>
-              <dl class="course">
-                <dt>主修课程</dt>
-                  <dd>java高级，高级数据库，项目管理，现代软件架构，软件过程管理，专业英语，数学建模</dd>
-              </dl>
-            </div>
-          </section>
-          <section class="project-experience">
-            <h3>项目经验</h3>
-            <div class="project-wrap">
-              <div class="project">
-                <span class="time">2016.7-至今</span>
-                <span class="address">劲牌公司调研平台武大项目组</span>
-                <span class="position">web前端开发 </span>
+            </section>
+            <section >
+              <h3>项目经验</h3>
+              <div class="project-wrap">
+                <div class="project">
+                  <span >2016.7-至今</span>
+                  <span >劲牌公司调研平台武大项目组</span>
+                  <span >web前端开发 </span>
+                </div>
+                <dl class="course">
+                  <dt>项目描述</dt>
+                    <dd>仿照问卷星实现问卷的设计，发布，添加标签，统计的功能，同时增加了访员系统用来督促消费者填写问卷 。</dd>
+                  <dt>我负责的主要任务</dt>
+                    <dd>
+                      <ol>
+                        <li>问卷设计题型的完善，以及一些bug的修改；</li>
+                        <li>访员系统的研发，主要负责增加消费者，获取消费者的答卷，消费者信息页面的编写；</li>
+                        <li>标签模块，主要负责获取后台的标签树数据，利用ztree插件展示给用户，获取用户添加的标签，传送给后台。 </li>
+                        <li>标签的维护，利用ztree实现对标签的增删改，以及拖动相关功能</li>
+                      </ol>
+                    </dd>  
+                </dl>
               </div>
-              <dl class="course">
-                <dt>项目描述</dt>
-                  <dd>仿照问卷星实现问卷的设计，发布，添加标签，统计的功能，同时增加了访员系统用来督促消费者填写问卷 。</dd>
-                <dt>我负责的主要任务</dt>
-                  <dd>
-                    <ol>
-                      <li>问卷设计题型的完善，以及一些bug的修改；</li>
-                      <li>访员系统的研发，主要负责增加消费者，获取消费者的答卷，消费者信息页面的编写；</li>
-                      <li>标签模块，主要负责获取后台的标签树数据，利用ztree插件展示给用户，获取用户添加的标签，传送给后台。 </li>
-                      <li>标签的维护，利用ztree实现对标签的增删改，以及拖动相关功能</li>
-                    </ol>
-                  </dd>  
-              </dl>
-            </div>
-            <div class="project-wrap">
-              <div class="project">
-                <span class="time">2017.3.15-至今</span>
-                <span class="address">kettle任务执行管理</span>
-                <span class="position">web前端开发 </span>
+              <div class="project-wrap">
+                <div class="project">
+                  <span >2017.3.15-至今</span>
+                  <span >kettle任务执行管理</span>
+                  <span >web前端开发 </span>
+                </div>
+                <dl class="course">
+                  <dt>项目描述</dt>
+                    <dd>开发kettle web端管理工具</dd>
+                  <dt>我负责的主要任务</dt>
+                    <dd>负责编写整个web端管理页面，使用vue.js以及element组件进行开发，实现对资源库，数据库，服务器，调度的增删查改。
+                    </dd>  
+                </dl>
               </div>
-              <dl class="course">
-                <dt>项目描述</dt>
-                  <dd>开发kettle web端管理工具</dd>
-                <dt>我负责的主要任务</dt>
-                  <dd>负责编写整个web端管理页面，使用vue.js以及element组件进行开发，实现对资源库，数据库，服务器，调度的增删查改。
-                  </dd>  
-              </dl>
-            </div>
-            <div class="project-wrap">
-              <div class="project">
-                <span class="time">2017.4.03-至今</span>
-                <span class="address">渠道云平台后台管理系统</span>
-                <span class="position">web前端开发 </span>
+              <div class="project-wrap">
+                <div class="project">
+                  <span>2017.4.03-至今</span>
+                  <span>渠道云平台后台管理系统</span>
+                  <span >web前端开发 </span>
+                </div>
+                <dl class="course">
+                  <dt>项目描述</dt>
+                    <dd>开发kettle web端管理工具</dd>
+                  <dt>我负责的主要任务</dt>
+                    <dd>负责编写整个web端管理页面，使用vue.js以及element组件进行开发，实现对资源库，数据库，服务器，调度的增删查改。
+                    </dd>  
+                </dl>
               </div>
-              <dl class="course">
-                <dt>项目描述</dt>
-                  <dd>开发kettle web端管理工具</dd>
-                <dt>我负责的主要任务</dt>
-                  <dd>负责编写整个web端管理页面，使用vue.js以及element组件进行开发，实现对资源库，数据库，服务器，调度的增删查改。
-                  </dd>  
-              </dl>
-            </div>
-          </section>
-          <section class="professional-skill">
-            <h3>专业技能</h3>
-            <ol class="skill">
-              <li>熟悉HTML5、CSS3、JavaScript等Web前端开发技术</li>
-              <li>熟悉运用jQuery，Bootstrap可实现页面的基本特效</li>
-              <li>熟悉HTTP协议、Ajax异步请求等；</li>
-              <li>熟悉运用chrome调试代码；</li>
-              <li>了解vue.js ，es6</li>
-            </ol>
-          </section>
-          <section class="certificate">
-            <h3>技能证书</h3>
-            <ul class="certificate-content">
-              <li>CET-6</li>
-              <li>计算机二级</li>
-            </ul>
-          </section>
-          <section class="self-assessment">
-            <h3>自我评价</h3>
-            <ol class="self-assessment-content">
-              <li>对自己要求严格，做事情讲究高质量;</li>
-              <li>为人真诚，谦虚好学，遇到问题不抱怨而是用行动去解决，有较强的责任心和团队合作精神;</li>
-              <li>热衷于网页设计;</li>
-              <li>服从安排，肯吃苦耐劳。</li>
-              <li>目前我的前端开发经验还比较缺乏，知识面还不够广，但是我会通过不断地学习来提升我的专业技能以及知识面。希望能求得一份web前端开发或网页设计/制作的职位。</li>
-            </ol>
-          </section>
-        </div>
+            </section>
+            <section >
+              <h3>专业技能</h3>
+              <ol class="skill">
+                <li>熟悉HTML5、CSS3、JavaScript等Web前端开发技术</li>
+                <li>熟悉运用jQuery，Bootstrap可实现页面的基本特效</li>
+                <li>熟悉HTTP协议、Ajax异步请求等；</li>
+                <li>熟悉运用chrome调试代码；</li>
+                <li>了解vue.js ，es6</li>
+              </ol>
+            </section>
+            <section>
+              <h3>技能证书</h3>
+              <ul class="certificate-content">
+                <li>CET-6</li>
+                <li>计算机二级</li>
+              </ul>
+            </section>
+            <section>
+              <h3>自我评价</h3>
+              <ol class="self-assessment-content">
+                <li>对自己要求严格，做事情讲究高质量;</li>
+                <li>为人真诚，谦虚好学，遇到问题不抱怨而是用行动去解决，有较强的责任心和团队合作精神;</li>
+                <li>热衷于网页设计;</li>
+                <li>服从安排，肯吃苦耐劳。</li>
+                <li>目前我的前端开发经验还比较缺乏，知识面还不够广，但是我会通过不断地学习来提升我的专业技能以及知识面。希望能求得一份web前端开发或网页设计/制作的职位。</li>
+              </ol>
+            </section>
+          </div>
         </div>
       </div>
     </div>    
-  </div>
   </body>
 </html>

@@ -3,7 +3,7 @@
   display:flex;
 }
 /*利用负边距实现两列等高*/
-.sidebar{
+aside{
   width: 170px;
   float:left;
   margin-right: -200px;
