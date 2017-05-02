@@ -1,0 +1,136 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>我的博客-css布局</title>
+		<meta name="keywords" content="css布局 圣杯布局 双飞翼布局 css3"/>
+		<meta name="description" content="css布局练习"/>
+		<meta name="author" content="王翠" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="blog-css/blog_base.css">
+    <link rel="stylesheet" type="text/css" href="blog-css/wing-double.css">
+    <!-- <link rel="stylesheet" type="text/css" href="blog-css/mid-right-adaption.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="blog-css/all-adaption.css">  -->  
+    <!-- <link rel="stylesheet" type="text/css" href="blog-css/grail.css"> -->
+	</head>
+	<body>
+	   <header>
+	   	  <div class="logo">
+	   	  	<img src="" alt="logo"/>
+	   	  	<span>博客</span>
+	   	  </div>
+	   	  <nav>
+	   	  	<ul>
+	   	  	  <li>搜索</li>
+	   	  	  <li>收藏</li>
+	   	  	  <li>通知</li>
+	   	  	  <li>编辑</li>
+	   	  	  <li>设置</li>
+	   	  	  <li>更多</li>
+	   	  	</ul>
+	   	  </nav>
+	   </header>
+	   <div class="main-container">
+	   	  <header>
+	   	  	<div class="matrix-left">
+	   	  		welcome
+	   	  	</div>
+	   	  	<div class="info">
+	   	  	  <div class="blackboard-tip">
+	   	  	  </div>
+	   	  	  <div class="blackboard">
+	   	  		<a href='#'>my name is wangcui</a>
+	   	  	  </div>
+	   	  	</div>
+	   	  	<div class="matrix-right">
+	   	  		enjoy yourself
+	   	  	</div>
+	   	  </header>
+	   	  <div class="main-content">
+	   	  	<div class="main-contentinner">
+	   	  	   <article class="main">
+	   	  	   	  <section>
+	   	  	   	    <h3>flex布局主轴元素单独设置对齐方式</h3>
+	   	  	   	  	<p> 今天用flex布局，想在主轴上设置某个flex-item右对齐，其他的左对齐，我以为直接用align-self属性就可以了，结果没效果，后来仔细阅读文档，发现align-self属性是用在单个元素的交叉轴的设置上，主轴元素没有找到设置单个元素的属性。 我要的效果是这样的（主轴方向为水平方向）但是实际效果所有元素左对齐于是我就对最右边的元素设置以下css就成功了 .inline-field.inlin...</p>
+	   	  	   	  </section>
+	   	  	   	  <section>
+	   	  	   	  	<h3>html页面设置滚动无效问题</h3>
+	   	  	   	  	<p>今天在做前端后台管理项目时发现页面内容过多，整个页面会随着滚动条一起滚动，导致网页很难看，于是决定固定整个页面的高度为显示屏的高度，然后让里面的某各div可设置滚动条。我以为就是设置html的overflow为hidden，div的overflow为auto就行了，但现实告诉我，我太天真。 首先我设置html的overflow为hidden，整个页面是不滚动了，可是该滚动的div即使内容超出屏幕高度...</p>
+	   	  	   	  </section>
+	   	  	   	  <section>
+	   	  	   	  	<h3>前端面试—html语义化</h3>
+	   	  	   	  	<p>今天在做前端后台管理项目时发现页面内容过多，整个页面会随着滚动条一起滚动，导致网页很难看，于是决定固定整个页面的高度为显示屏的高度，然后让里面的某各div可设置滚动条。我以为就是设置html的overflow为hidden，div的overflow为auto就行了，但现实告诉我，我太天真。 首先我设置html的overflow为hidden，整个页面是不滚动了，可是该滚动的div即使内容超出屏幕高度...</p>
+	   	  	   	  </section>
+	   	  	   	  <section>
+	   	  	   	  	<h3> 近期前端学习规划</h3>
+	   	  	   	  	<p>今天在做前端后台管理项目时发现页面内容过多，整个页面会随着滚动条一起滚动，导致网页很难看，于是决定固定整个页面的高度为显示屏的高度，然后让里面的某各div可设置滚动条。我以为就是设置html的overflow为hidden，div的overflow为auto就行了，但现实告诉我，我太天真。 首先我设置html的overflow为hidden，整个页面是不滚动了，可是该滚动的div即使内容超出屏幕高度...</p>
+	   	  	   	  </section>
+	   	  	   </article>
+	   	  	</div>
+            <aside class="sid-left">
+              <div class="self-info">
+              	<img src='img/wangcui.png' alt="我的照片"/>
+                <section class="personal">
+                  <p>个人资料</p>
+                  <ul>
+                    <li>访问：272次</li>
+                    <li>积分：70</li>
+                    <li>等级：blog1</li>
+                    <li>排名：千里之外</li>
+                  </ul>
+                  <p>兴趣爱好</p>
+                  <ul class="interests">
+                    <li>原创：6篇</li>
+                    <li>转载：3篇</li>
+                    <li>译文：0篇</li>
+                    <li>评论：2条</li>
+                  </ul>
+                </section>
+              </div>
+              <div class="article-classify">
+              	<p>文章分类</p>
+                  <ul>
+                    <li>coding (2)</li>
+                    <li>css (3)</li>
+                    <li>web (5)</li>
+                    <li>js (2)</li>
+                    <li>jquery (2)</li>
+                    <li>学习计划 (2)</li>
+                  </ul>
+              </div>
+            </aside>
+            <aside class="sid-right">
+              <div class="self-info">
+                <section class="personal">
+                  <p>个人资料</p>
+                  <ul>
+                    <li>访问：272次</li>
+                    <li>积分：70</li>
+                    <li>等级：blog1</li>
+                    <li>排名：千里之外</li>
+                  </ul>
+                  <p>兴趣爱好</p>
+                  <ul class="interests">
+                    <li>原创：6篇</li>
+                    <li>转载：3篇</li>
+                    <li>译文：0篇</li>
+                    <li>评论：2条</li>
+                  </ul>
+                </section>
+              </div>
+              <div class="article-classify">
+              	<p>文章分类</p>
+                  <ul>
+                    <li>coding (2)</li>
+                    <li>css (3)</li>
+                    <li>web (5)</li>
+                    <li>js (2)</li>
+                    <li>jquery (2)</li>
+                    <li>学习计划 (2)</li>
+                  </ul>
+              </div>
+            </aside>
+	   	  </div>	   	  
+	   </div>
+	   <footer></footer>
+	</body>
+</html>

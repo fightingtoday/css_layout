@@ -1,0 +1,31 @@
+.main-container{
+     width: 100%;
+     height: 100%;
+}
+.main-content{
+     width: 80%;
+     margin: 0 auto;          	
+}
+.main-contentinner{
+     width: 100%;
+     float:left;
+}
+.sid-left{
+     width: 200px;
+     float:left;
+     margin-left: -100%;
+}
+.sid-right{
+     width: 200px;
+     float:right; /*为何得向右浮动，网上都是左浮动*/
+     margin-left: -200%;
+}
+.main{
+     margin: 0 200px 0 200px;
+     padding: 2%;
+     background: white;
+}
+.main section{
+     padding-bottom: 5px;
+     border-bottom: 1px #ccc dotted;
+}
