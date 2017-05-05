@@ -29,3 +29,13 @@
      padding-bottom: 5px;
      border-bottom: 1px #ccc dotted;
 }
+.ss{
+     font-size||font-variant||font-weight|| font-size/line-height||font-family
+}
+body{
+     font:italic small-caps bold 12px/140% "Lucida Grande",sans-serif;
+}
+E[attr]
+E[attr="value"]
+E[attr~="value"]
+E[attr|="value"]

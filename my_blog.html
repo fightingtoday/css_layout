@@ -13,41 +13,42 @@
     <!-- <link rel="stylesheet" type="text/css" href="blog-css/grail.css"> -->
 	</head>
 	<body>
-	   <header>
-	   	  <div class="logo">
-	   	  	<img src="" alt="logo"/>
-	   	  	<span>博客</span>
-	   	  </div>
-	   	  <nav>
-	   	  	<ul>
-	   	  	  <li>搜索</li>
-	   	  	  <li>收藏</li>
-	   	  	  <li>通知</li>
-	   	  	  <li>编辑</li>
-	   	  	  <li>设置</li>
-	   	  	  <li>更多</li>
-	   	  	</ul>
-	   	  </nav>
+	   <header role="banner">
+        <div class='nav'>
+	   	    <div class="logo">
+	   	  	  <img src="" alt="logo"/>
+	   	  	  <span>博客</span>
+	   	    </div>
+	   	    <nav role="navigation">
+	   	  	  <ul>
+	   	  	    <li>搜索</li>
+	   	  	    <li>收藏</li>
+	   	  	    <li>通知</li>
+	   	  	    <li>编辑</li>
+	   	  	    <li>设置</li>
+	   	  	    <li>更多</li>
+	   	  	  </ul>
+	   	    </nav>
+        </div>
 	   </header>
 	   <div class="main-container">
 	   	  <header>
-	   	  	<div class="matrix-left">
-	   	  		welcome
-	   	  	</div>
-	   	  	<div class="info">
-	   	  	  <div class="blackboard-tip">
-	   	  	  </div>
-	   	  	  <div class="blackboard">
-	   	  		<a href='#'>my name is wangcui</a>
-	   	  	  </div>
-	   	  	</div>
-	   	  	<div class="matrix-right">
-	   	  		enjoy yourself
-	   	  	</div>
+          <div class="bg">
+            <h3>fighting_today的博客</h3>
+          </div>
+          <nav>
+            <ul>
+              <li>目录视图</li>
+              <li>摘要视图</li>
+              <li>订阅</li>
+              <li>管理博客</li>
+              <li>写新文章</li>
+            </ul>
+          </nav>
 	   	  </header>
 	   	  <div class="main-content">
 	   	  	<div class="main-contentinner">
-	   	  	   <article class="main">
+	   	  	   <article class="main" role="main">
 	   	  	   	  <section>
 	   	  	   	    <h3>flex布局主轴元素单独设置对齐方式</h3>
 	   	  	   	  	<p> 今天用flex布局，想在主轴上设置某个flex-item右对齐，其他的左对齐，我以为直接用align-self属性就可以了，结果没效果，后来仔细阅读文档，发现align-self属性是用在单个元素的交叉轴的设置上，主轴元素没有找到设置单个元素的属性。 我要的效果是这样的（主轴方向为水平方向）但是实际效果所有元素左对齐于是我就对最右边的元素设置以下css就成功了 .inline-field.inlin...</p>
@@ -68,8 +69,8 @@
 	   	  	</div>
             <aside class="sid-left">
               <div class="self-info">
-              	<img src='img/wangcui.png' alt="我的照片"/>
-                <section class="personal">
+              	<img alt="我的照片"/>
+                <div class="personal">
                   <p>个人资料</p>
                   <ul>
                     <li>访问：272次</li>
@@ -84,7 +85,7 @@
                     <li>译文：0篇</li>
                     <li>评论：2条</li>
                   </ul>
-                </section>
+                </div>
               </div>
               <div class="article-classify">
               	<p>文章分类</p>
@@ -100,7 +101,7 @@
             </aside>
             <aside class="sid-right">
               <div class="self-info">
-                <section class="personal">
+                <div class="personal">
                   <p>个人资料</p>
                   <ul>
                     <li>访问：272次</li>
@@ -115,7 +116,7 @@
                     <li>译文：0篇</li>
                     <li>评论：2条</li>
                   </ul>
-                </section>
+                </div>
               </div>
               <div class="article-classify">
               	<p>文章分类</p>

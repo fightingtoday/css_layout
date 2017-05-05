@@ -12,10 +12,19 @@ body{
   background-size: 100px 100px;
 }
 header{
-  width:80%;
+  width:100%;
   height:40px;
   margin: 0 auto;
   display: flex;
+  background-color: #48525e;
+}
+header .nav{
+  width: 80%;
+  line-height: 40px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content:space-between;
 }
 header .logo{
   flex:0 0 auto;
@@ -30,44 +39,48 @@ header nav{
 nav ul li{
   display: inline-block;
   list-style: none;
+  cursor: pointer;
 }
 .main-container{
   width: 100%;
 }
 .main-container header{
   height: 300px;
+  width: 80%;
   display: flex;
+  flex-direction:column;
   justify-content:space-between;
+  background-color: transparent;  
 }
-/* .matrix-left{
-  display: flex;
-  flex:1;
-  justify-content:flex-start;
-  transform: matrix3d(7.454735, 0.851279, 0, 0.01033, 
-          1.223813, 3.298603, 0, 0.002661, 
-          0, 0, 1, 0, 
-          84, 169, 0, 1);
-  transform-origin: 0px 0px 0px;
-            
-  width: 187.188px;
-  height: 38px;
+.main-container header .bg{
+  height: 250px;
+  width: 100%;
+  text-shadow:inset -1px -1px  #ccc;
+  background: url(../img/bgg.png) no-repeat center;
 }
-.matrix-right{
-  display: flex;
-  flex:1;
-  justify-content:flex-end;
-    transform: matrix3d(0.178453, -0.868048, 0, -0.004889, 
-          0.105482, 1.331143, 0, 0.000461, 
-          0, 0, 1, 0, 
-          229, 142, 0, 1);
-    transform-origin: 0px 0px 0px;
-            
-  width: 187.188px;
-  height: 38px;
-
-}*/
-.info{
-  display: flex;
-  align-item:flex-center;
+.main-container header nav{
+  height: 50px;
+  line-height: 50px;
+  padding-right: 2%;
+  box-shadow: -2px -2px #ccc;
+  background-color: #454545;
 }
-         
+.main-container header ul li{
+  height:30px;
+  line-height: 30px;
+  border: 1px #ccc solid;
+  background-color: white;
+}
+.sid-left .self-info,.sid-left .article-classify{
+  margin: 0 2% 2% 0;
+  background-color: white;
+  padding: 2%;
+}
+.sid-right .self-info,.sid-right .article-classify{
+  margin: 0 0 2% 2%;
+  background-color: white;
+  padding: 2%;
+}      
+.nav-position{
+  display: none;
+}
