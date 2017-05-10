@@ -12,6 +12,47 @@
     <!-- <link rel="stylesheet" type="text/css" href="blog-css/all-adaption.css">  -->  
     <!-- <link rel="stylesheet" type="text/css" href="blog-css/grail.css"> -->
 	</head>
+  <style>
+   /*注意相对定位设置在ul上，而不是每一级的li*/ 
+  #test{
+    position: relative;
+  }
+  .test li{
+    display: block;
+  }
+  .mystyle{
+    position:absolute;
+    top:40px;
+    right:0;
+    display:block;
+    background-color: white;
+    color: #000;
+  }
+  </style>
+  <script type="text/javascript">
+  window.onload=function(){
+    headNav();
+  }
+  // header部分的导航栏的鼠标移入移出事件
+  function headNav(){
+    var testId = document.querySelectorAll('.test');
+    var len = testId.length
+    for (var i=0;i<len;i++){
+      // 添加鼠标移入事件
+      testId[i].addEventListener('mouseenter', function(){
+        var chaildNodes = this.childNodes        
+        chaildNodes[1].classList.remove("nav-position") 
+        chaildNodes[1].classList.add("mystyle")     
+      },false)
+      // 添加鼠标移出事件
+      testId[i].addEventListener('mouseleave', function(){
+        var chaildNodes = this.childNodes
+        chaildNodes[1].classList.add("nav-position") 
+        chaildNodes[1].classList.remove("mystyle")     
+      },false)
+    }     
+  }
+  </script>
 	<body>
 	   <header role="banner">
         <div class='nav'>
@@ -20,15 +61,66 @@
 	   	  	  <span>博客</span>
 	   	    </div>
 	   	    <nav role="navigation">
-	   	  	  <ul>
-	   	  	    <li>搜索</li>
-	   	  	    <li>收藏</li>
-	   	  	    <li>通知</li>
-	   	  	    <li>编辑</li>
-	   	  	    <li>设置</li>
-	   	  	    <li>更多</li>
+	   	  	  <ul id="test">
+	   	  	    <li class='test'>搜索
+                <div class="nav-position">
+                  <input type="text" />
+                  <button>搜索</button>
+                </div>
+              </li>
+	   	  	    <li class='test'>收藏
+                <div class="nav-position">
+                  <label >标题</label>
+                  <input type="text" />
+                  <label >标签</label>
+                  <input type="text" />
+                </div>
+              </li>
+	   	  	    <li class='test'>通知
+                <div class="nav-position">
+                  <ul>
+                    <li>通知1这个通知有道词典的的骄傲四等奖</li>
+                    <li>通知2这个通知有道词典的的骄傲四等奖</li>
+                    <li>通知3这个通知有道词典的的骄傲四等奖</li>
+                    <li>通知4这个通知有道词典的的骄傲四等奖</li>
+                    <li>通知5这个通知有道词典的的骄傲四等奖</li>
+                    <li>更多这个通知有道词典的的骄傲四等奖</li>
+                  </ul>
+                </div>
+              </li>
+	   	  	    <li class='test'>编辑
+                 <div class="nav-position">
+                  <ul>
+                    <li>提问题wregfc搜狗输入谈何容易就</li>
+                    <li>写博客这都不知道吧</li>
+                    <li>传资源吧S的v组队副本</li>
+                    <li>创建项目最低标准返回</li>
+                    <li>创建代码片说到做到</li>
+                  </ul>
+                </div>
+              </li>
+	   	  	    <li class='test'>设置
+                <div class="nav-position">
+                  <ul>
+                    <li>提问题在v</li>
+                    <li>写博客大是大非</li>
+                    <li>传资源的算法的</li>
+                    <li>创建项目算分但是的</li>
+                    <li>创建代码片是的</li>
+                  </ul>
+              </li>
+	   	  	    <li class='test'>更多
+                <div class="nav-position">
+                  <ul>
+                    <li>提问题在消防水带</li>
+                    <li>写博客战斗法师</li>
+                    <li>传资源发送的</li>
+                    <li>创建项目多福多寿</li>
+                    <li>创建代码片sdfsdf</li>
+                  </ul>
+              </li>
 	   	  	  </ul>
-	   	    </nav>
+	   	    </nav>          
         </div>
 	   </header>
 	   <div class="main-container">
