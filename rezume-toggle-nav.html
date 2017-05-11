@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>导航toggle</title>
+    <meta name="keywords" content="css布局" />
+    <meta name="description" content="css两列布局" />
+    <meta name="author" content="王翠" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/base.css"><!-- 详细布局 --> 
+    <style>
+    aside{
+      float:left;
+      width: 200px;
+      height: 100%;
+      padding-left: 2%;
+      padding-bottom: 9999px;
+      margin-bottom: -9999px;
+    }
+    .main-contant{
+      margin-left: 250px
+    }
+    .main-containner:after{
+      display: block;
+      visibility: hidden;
+      clear: both;
+      content: '.';
+      height: 0
+    }
+    .nav2{
+      display:none;
+    }
+    .nav>li>ul{
+      display: none;
+    }
+    .active{
+      display: block;
+    }
+    </style>
+    <script type="text/javascript">
+       window.onload = function (){
+          
+       }
+      
+    </script>
+  </head>
+  <body>
+    <header>欢迎大家来看我的简历</header>
+    <div class='main-containner'>
+      <aside>
+      <a href=''>基本</a>
+        <ul class='nav'>
+          <li>1基本信息
+             <ul>
+               <li>姓名</li>
+               <li>电话</li>
+             </ul>
+          </li>
+          <li>1教育背景
+            <ul>
+              <li>大学</li>
+              <li>研究生</li>
+            </ul>
+          </li>
+          <li>1项目经验
+            <ul>
+              <li>调研劲牌</li>
+              <li>渠道云</li>
+            </ul>
+          </li>
+          <li>1专业技能
+            <ul>
+              <li>计算机</li>
+              <li>英语</li>
+            </ul>
+          </li>
+          <li>1技能证书
+            <ul>
+              <li>计算机</li>
+              <li>英语</li>
+            </ul>
+          </li>
+          <li>1自我评价</li>
+        </ul>
+        <a href=''>more更多</a>
+        <ul class='nav2'>
+          <li>2基本信息</li>
+          <li>2教育背景</li>
+          <li>2项目经验</li>
+          <li>2专业技能</li>
+          <li>2技能证书</li>
+          <li>2自我评价</li>
+        </ul>
+      </aside>
+      <div class="main-contant">
+        
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>玩坏了我的简历-左列定宽右列自适应+两列等高(负边距实现)</title>
+    <meta name="keywords" content="css布局" />
+    <meta name="description" content="css两列布局" />
+    <meta name="author" content="王翠" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/base.css"><!-- 详细布局 --> 
+    <style>
+    aside{
+      float:left;
+      width: 200px;
+      height: 100%;
+      padding-left: 2%;
+      padding-bottom: 9999px;
+      margin-bottom: -9999px;
+    }
+    .main-contant{
+      margin-left: 250px
+    }
+    .main-containner:after{
+      display: block;
+      visibility: hidden;
+      clear: both;
+      content: '.';
+      height: 0
+    }
+    .section{
+      display: none;
+    }
+    .active{
+      display: block;
+    }
+    </style>
+    <script type="text/javascript">
+       window.onload = function (){
+          navContent ();
+       }
+       function navContent () {
+         var nav = document.querySelector('.nav');
+         var navLi = nav.childNodes;
+         var lastNav = []; // 存储所有的li元素
+          // 对nav的子元素进行删选，选出li,放入lastNav
+         for (var i=0;i<navLi.length;i++){
+          if(navLi[i].nodeName.toLowerCase() === 'li') {
+           lastNav.push(navLi[i])
+          }
+         }
+         // 获取所有的class为section的元素
+         var sec = document.querySelectorAll('.section');
+         console.log(sec)
+         // 下面两种方法都可以
+         for (var j=0;j<lastNav.length;j++){
+          lastNav[j].addEventListener('mouseenter',function(num){
+             // 注意一定要在外面包裹一层函数
+             return function(){
+               for (var g=0;g<sec.length;g++){
+                 sec[g].classList.remove('active')
+               }
+               sec[num].classList.add("active")
+             }
+             
+          }(j),false)
+            // lastNav[j].onclick = function (num) {
+            //   // 注意一定要在外面包裹一层函数
+            //   return function () {
+            //     for (var g=0;g<sec.length;g++){
+            //      sec[g].classList.remove('active')
+            //     }
+            //     sec[num].classList.add("active")
+            //   }
+              
+            // }(j)
+         }
+       }
+    </script>
+  </head>
+  <body>
+    <header>欢迎大家来看我的简历</header>
+    <div class='main-containner'>
+    <aside>
+      <ul class='nav'>
+        <li>基本信息</li>
+        <li>教育背景</li>
+        <li>项目经验</li>
+        <li>专业技能</li>
+        <li>技能证书</li>
+        <li>自我评价</li>
+      </ul>
+    </aside>
+    <div class="main-contant">
+      <div class='section'>
+          <p>基本信息</p>
+          <ul>
+            <li>王翠 24岁</li>
+            <li>湖北省黄冈市</li>
+            <li>17786610201</li>
+            <li>1213283830@qq.com</li>
+          </ul>
+          <p>兴趣爱好</p>
+          <ul class="interests">
+            <li>旅游</li>
+            <li>运动</li>
+            <li>阅读</li>
+          </ul>
+        </div>
+        <div class='section'>
+          <h3>教育背景</h3>
+              <div class="educational-wrap">
+                <div class="educational">
+                  <span >2012.09-2016.07</span>
+                  <span >长江大学</span>
+                  <span >通信工程</span>
+                  <span >本科</span>
+                </div>
+                <dl class="course">
+                  <dt>主修课程</dt>
+                    <dd>C语言，计算机基础，计算机网络，通信原理，数字电路，模拟电路，英语，高数</dd>
+                </dl>
+              </div>
+              <div class="educational-wrap">
+                <div class="educational">
+                  <span >2016.09-2018.07</span>
+                  <span >武汉大学</span>
+                  <span >软件工程 </span>
+                  <span >硕士</span>
+                </div>
+                <dl class="course">
+                  <dt>主修课程</dt>
+                    <dd>java高级，高级数据库，项目管理，现代软件架构，软件过程管理，专业英语，数学建模</dd>
+                </dl>
+              </div>
+        </div>
+        <div class='section'>
+          <h3>项目经验</h3>
+              <div class="project-wrap">
+                <div class="project">
+                  <span >2016.7-至今</span>
+                  <span >劲牌公司调研平台武大项目组</span>
+                  <span >web前端开发 </span>
+                </div>
+                <dl class="course">
+                  <dt>项目描述</dt>
+                    <dd>仿照问卷星实现问卷的设计，发布，添加标签，统计的功能，同时增加了访员系统用来督促消费者填写问卷 。</dd>
+                  <dt>我负责的主要任务</dt>
+                    <dd>
+                      <ol>
+                        <li>问卷设计题型的完善，以及一些bug的修改；</li>
+                        <li>访员系统的研发，主要负责增加消费者，获取消费者的答卷，消费者信息页面的编写；</li>
+                        <li>标签模块，主要负责获取后台的标签树数据，利用ztree插件展示给用户，获取用户添加的标签，传送给后台。 </li>
+                        <li>标签的维护，利用ztree实现对标签的增删改，以及拖动相关功能</li>
+                      </ol>
+                    </dd>  
+                </dl>
+              </div>
+              <div class="project-wrap">
+                <div class="project">
+                  <span >2017.3.15-至今</span>
+                  <span >kettle任务执行管理</span>
+                  <span >web前端开发 </span>
+                </div>
+                <dl class="course">
+                  <dt>项目描述</dt>
+                    <dd>开发kettle web端管理工具</dd>
+                  <dt>我负责的主要任务</dt>
+                    <dd>负责编写整个web端管理页面，使用vue.js以及element组件进行开发，实现对资源库，数据库，服务器，调度的增删查改。
+                    </dd>  
+                </dl>
+              </div>
+              <div class="project-wrap">
+                <div class="project">
+                  <span>2017.4.03-至今</span>
+                  <span>渠道云平台后台管理系统</span>
+                  <span >web前端开发 </span>
+                </div>
+                <dl class="course">
+                  <dt>项目描述</dt>
+                    <dd>开发kettle web端管理工具</dd>
+                  <dt>我负责的主要任务</dt>
+                    <dd>负责编写整个web端管理页面，使用vue.js以及element组件进行开发，实现对资源库，数据库，服务器，调度的增删查改。
+                    </dd>  
+                </dl>
+              </div>
+        </div>
+        <div class='section'>
+          <h3>专业技能</h3>
+              <ol class="skill">
+                <li>熟悉HTML5、CSS3、JavaScript等Web前端开发技术</li>
+                <li>熟悉运用jQuery，Bootstrap可实现页面的基本特效</li>
+                <li>熟悉HTTP协议、Ajax异步请求等；</li>
+                <li>熟悉运用chrome调试代码；</li>
+                <li>了解vue.js ，es6</li>
+              </ol>
+        </div>
+        <div class='section'>
+           <h3>技能证书</h3>
+              <ul class="certificate-content">
+                <li>CET-6</li>
+                <li>计算机二级</li>
+              </ul>
+        </div>
+        <div class='section'>
+          <h3>自我评价</h3>
+              <ol class="self-assessment-content">
+                <li>对自己要求严格，做事情讲究高质量;</li>
+                <li>为人真诚，谦虚好学，遇到问题不抱怨而是用行动去解决，有较强的责任心和团队合作精神;</li>
+                <li>热衷于网页设计;</li>
+                <li>服从安排，肯吃苦耐劳。</li>
+                <li>目前我的前端开发经验还比较缺乏，知识面还不够广，但是我会通过不断地学习来提升我的专业技能以及知识面。希望能求得一份web前端开发或网页设计/制作的职位。</li>
+              </ol>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
